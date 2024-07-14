@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.title {
+    font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin: 15rem auto 0;
+  text-align: center;
+}
+ .backBtn {
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 7px 20px;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15rem ;
+}
+.backBtn:hover {
+  background-color: #01b9b9;
+}

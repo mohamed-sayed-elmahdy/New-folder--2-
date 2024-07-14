@@ -1,0 +1,33 @@
+.modernUI {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    114.85deg,
+    #007168 -16.49%,
+    rgb(13, 13, 13) 141.85%
+  );
+  padding: 20px;
+  border-radius: 25px;
+  z-index: 1001;
+  text-align: center;
+}
+.modernUI p {
+  margin: 0.5rem auto;
+  font-weight: 500;
+}
+.Okbtn {
+  margin: 1rem auto 0.5rem;
+  color: white;
+  cursor: pointer;
+  background: #08ffea;
+  padding: 10px 60px;
+  border-radius: 18px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Okbtn:hover {
+    background: #52fff1;
+}

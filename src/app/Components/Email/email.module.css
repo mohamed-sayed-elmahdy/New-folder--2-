@@ -1,0 +1,134 @@
+.emailsubscriptioncontainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.emailsubscriptioncontainer .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.emailsubscriptioncontainer .actionTitleAndInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  background: #1d2227;
+  border-radius: 30px;
+  width: 68%;
+  padding: 20px;
+  margin: 2rem auto;
+}
+.emailsubscriptioncontainer .actionTitleAndInputContainer h1 {
+  font-weight: 800;
+  color: #72f2ee;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.inputwithbutton {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  margin: 2rem auto;
+}
+.inputwithbutton .emailinput {
+  padding: 18px 20px;
+  border: 1px solid rgba(0, 255, 255, 0.262);
+  background: transparent;
+  border-radius: 20px;
+  width: 490px;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s;
+}
+.inputwithbutton .emailinput::placeholder {
+  color: #72f2ee;
+  font-size: 15px;
+}
+.inputwithbutton .emailinput:focus {
+  border: 1px solid rgba(0, 255, 255, 0.814);
+  outline: 1px solid rgba(0, 255, 255, 0.262);
+}
+.subscribebutton {
+  background-color: #2f5c5a;
+  color: #72f2ee;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 27px;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 9px;
+}
+
+.subscribebutton:hover {
+  background-color: rgba(34, 255, 255, 0.815);
+  color: black;
+}
+
+.emailsubscriptioncontainer .actionTitleAndInputContainer p {
+  color: #5caba8;
+  font-weight: 400;
+  text-align: center;
+  width: 80%;
+  font-size: 15px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .emailsubscriptioncontainer .actionTitleAndInputContainer h1 {
+    font-size: 30px;
+  }
+  .emailsubscriptioncontainer .actionTitleAndInputContainer {
+    width: 96%;
+  }
+  .inputwithbutton .emailinput {
+    width: 450px;
+  }
+  .emailsubscriptioncontainer .actionTitleAndInputContainer p {
+    width: 98%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emailsubscriptioncontainer .actionTitleAndInputContainer h1 {
+    font-size: 30px;
+  }
+  .emailsubscriptioncontainer .actionTitleAndInputContainer {
+    width: 96%;
+  }
+  .inputwithbutton .emailinput {
+    width: 380px;
+  }
+  .emailsubscriptioncontainer .actionTitleAndInputContainer p {
+    width: 98%;
+    font-size: 14px;
+  }
+  .inputwithbutton .emailinput {
+    padding: 13px;
+  }
+  .inputwithbutton .subscribebutton {
+    padding: 5px 15px;
+  }
+  .inputwithbutton .emailinput::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputwithbutton .emailinput {
+    width: 290px;
+  }
+}

@@ -1,0 +1,139 @@
+/*  what Is Block Section */
+.whatIsdecentralization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75))
+      no-repeat,
+    url("../../../public/whatIsBlock.png") no-repeat;
+  background-size: cover;
+  background-position: center, top;
+  margin: 0rem 2rem 1rem;
+  border-radius: 10px;
+}
+
+.whatIsdecentralization .whatIsTitle {
+  margin: 14rem auto 1rem;
+  font-size: 52px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.whatIsdecentralization .whatIsParagraph {
+  text-align: center;
+  font-weight: 400;
+  margin: 1rem auto 12rem;
+  width: 49%;
+  text-transform: capitalize;
+}
+/* End what Is Block Section*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(90.02deg, #00e5d1 -27.56%, #008e93 43.56%);
+  background-clip: text;
+  color: transparent;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.listItem strong {
+  font-weight: 600;
+}
+
+.container .tableContainer {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.table th,
+.table td {
+  border: 1px solid  #006b68ed;
+  padding: 10px;
+  text-align: left;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.table th {
+  font-weight: 600;
+  background-image: linear-gradient(90.02deg, #00e5d1 -27.56%, #008890 43.56%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Adjust table layout for smaller screens */
+@media only screen and (max-width: 600px) {
+  .table th,
+  .table td {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .whatIsdecentralization .whatIsTitle {
+    font-size: 38px;
+  }
+  .whatIsdecentralization .whatIsParagraph {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .whatIsdecentralization .whatIsTitle {
+    font-size: 30px;
+  }
+  .whatIsdecentralization .whatIsParagraph {
+    width: 89%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .whatIsdecentralization {
+    margin: 0rem 1rem 1rem;
+  }
+  .whatIsdecentralization .whatIsTitle {
+    font-size: 28px;
+  }
+  .whatIsdecentralization .whatIsParagraph {
+    width: 95%;
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px;
+  }
+}

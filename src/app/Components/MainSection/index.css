@@ -1,0 +1,118 @@
+
+.mainSection{
+  position: relative;
+}
+.mainSection-container{
+  height: fit-content;
+  position: relative !important;
+}
+.log4 {
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 200vh;
+}
+.texSection{
+  width: 100vw; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-top: 2.5rem; 
+}
+.text{
+  color: white; 
+  margin-top: 200px;
+  margin-left: 100px;
+  width: 40%;
+}
+.text h1{
+  color: #33D7C8;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.text h2{
+  color: #33D7C8; 
+    font-weight: bold; 
+    font-size: 2rem; 
+    margin-top: 0.5rem;
+}
+.text p{
+  color: #D1D5DB; 
+  font-weight:100; 
+  font-size: 1rem; 
+  margin: 1rem 0;
+}
+.mainSection .ImgsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mainSection .ImgsContainer .dlicomAppImg {
+  height: 48px;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-image: url("../../../../public/light.png");
+  background-repeat: no-repeat;
+  background-position: 150% 10%;
+  padding-bottom: 500px;
+  padding-right: 500px ;
+}
+.mockup{ 
+  margin-top: 100px;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin-right: 100px;
+}
+.phoneContainer{
+  color: #D1D5DB;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.imgContainer{
+  margin-left: 10px;
+  height: 495px;
+  width: 230px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.imgContainer img{
+  height: 100%;
+width: 100%;
+}
+.animationText{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  margin-left: 100px;
+ 
+}
+.animationText .box{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.IoIosCall{
+  border-radius: 9999px;
+  font-size: 1.5rem;
+background-color: #047857;
+}
+

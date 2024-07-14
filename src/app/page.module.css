@@ -1,0 +1,1468 @@
+/* main section */
+
+.mainSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: url("../../public/dlicomAppImg.png") no-repeat;
+  background-size: 66%;
+  background-position: 125% 10%;
+  height: 95dvh;
+}
+.mainSection .textContainer {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 10rem 0 4% 10%;
+  width: 500px;
+}
+.mainSection .textContainer .mainSectionTitle {
+  color: #24caca;
+  font-size: 43px;
+  font-weight: 700;
+}
+.mainSection .textContainer .mainSectionPara {
+  color: #a8a8a8;
+  font-size: 22px;
+  font-weight: 600;
+}
+.mainSection .ImgsContainer {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mainSection .ImgsContainer .dlicomAppImg {
+  height: 48px;
+}
+
+/* End main section */
+
+/* Video Section */
+.videoSection {
+  background: url("../../public/videoSection.jpg");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 180%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+}
+.videoSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.videoSection .videoContainer {
+  width: 60%;
+  margin-top: 2rem;
+  z-index: 3;
+}
+.iframe {
+  width: 100%;
+  height: 490px;
+  border: 25px solid rgba(0, 128, 128, 0.3);
+  border-radius: 25px;
+}
+.videoSection .videoPara {
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: capitalize;
+  z-index: 3;
+  margin-top: 1rem;
+}
+/* End Video Section */
+
+/* White Paper Section */
+
+.whitePaperSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.whitePaperSection .whitePaperContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-direction: column;
+  width: 60%;
+  margin: 9rem auto;
+  background: url("../../public/blocks-glass.png") no-repeat,
+    linear-gradient(60deg, #1790a6 0%, rgba(0, 0, 0, 0) 70%);
+  background-size: 130%, cover;
+  background-position: -110% 12%, center;
+  color: white;
+  padding: 29px 20px;
+  border-radius: 15px;
+}
+.whitePaperSection .whitePaperContainer .whitePaperTitle {
+  line-height: 53px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.whitePaperSection .whitePaperContainer .whitePaperpara {
+  font-size: 15px;
+  font-weight: 300;
+}
+.whitePaperSection .whitePaperContainer .whitePaperBtn {
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 7px 20px;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.whitePaperSection .whitePaperContainer .whitePaperBtn:hover {
+  background-color: #01b9b9;
+}
+
+/* End White Paper Section */
+
+/* Dlicom Features Section */
+
+.DlicomFeaturesSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 2rem;
+}
+.DlicomFeaturesSection .container {
+  width: 82%;
+}
+.DlicomFeaturesSection .titleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+.DlicomFeaturesSection .titleContainer .DlicomFeaturesTitle {
+  color: #87d1ff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.DlicomFeaturesSection .titleContainer .DlicomFeaturespara {
+  font-size: 23px;
+  color: #c4c4c4;
+}
+.DlicomFeaturesSection .DlicomFeaturesCardsConatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+.DlicomFeaturesSection .DlicomFeaturesCardsConatiner .easyAppCard {
+  position: relative;
+  border: 1px solid #362c4af8;
+  border-radius: 15px;
+  height: 555px;
+  width: 390px;
+}
+.DlicomFeaturesSection .DlicomFeaturesCardsConatiner .easyAppCard .firstImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+
+}
+.DlicomFeaturesSection .columncards .firstImg {
+  width: 100%;
+  height: 100%;
+}
+.DlicomFeaturesSection
+  .DlicomFeaturesCardsConatiner
+  .easyAppCard
+  .easyAppCardTitle {
+  font-size: 22px;
+  padding: 5px;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto 0;
+}
+
+.DlicomFeaturesSection .columncards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 555px;
+  width: 390px;
+}
+.DlicomFeaturesSection .smallcolumncards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 390px;
+  border: 1px solid #362c4af8;
+  border-radius: 15px;
+  text-align: center;
+}
+.DlicomFeaturesSection .smallcolumncards .ImgsContainer {
+  width: 340px;
+  height: 290px;
+}
+.DlicomFeaturesSection .smallcolumncards .ImgsContainer .userProfileImg {
+  width: 100%;
+  height: 100%;
+}
+.DlicomFeaturesSection .smallcolumncards h2 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.DlicomFeaturesSection .smallcolumncards p {
+  color: rgba(255, 255, 255, 0.48);
+}
+.DlicomFeaturesSection .columncards .columncard {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  border: 1px solid #362c4af8;
+  text-align: center;
+}
+.DlicomFeaturesSection .columncards .columncard p {
+  color: rgba(255, 255, 255, 0.48);
+}
+.DlicomFeaturesSection .columncards .columncard .ImgBottomContainer {
+  width: 100%;
+  border-radius: 15px;
+  height: 430px;
+  margin-bottom: 1rem;
+}
+.DlicomFeaturesSection .columncards .columncard .leftImgContainer {
+  width: 100%;
+  border-radius: 15px;
+  height: 476px;
+}
+.DlicomFeaturesSection .columncards .columncard .leftImgContainer .leftImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.DlicomFeaturesSection .columncards .columncard h2 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+.DlicomFeaturesSection .columncards .columncard p {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.DlicomFeaturesSection .columncards .columncardsTop {
+  padding: 2px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  border: 1px solid #362c4af8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.DlicomFeaturesSection .columncards .columncardsTop .ImgsContainer {
+  width: 250px;
+  height: 230px;
+}
+.DlicomFeaturesSection .columncards .columncardsTop .userProfileImg {
+  width: 100%;
+  height: 100%;
+}
+.DlicomFeaturesSection .ImgsContainer {
+  width: 100%;
+  height: 100%;
+  margin: 1rem auto 0;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DlicomFeaturesSection .columncards .columncardsTop h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.DlicomFeaturesSection .columncards .columncardsTop p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.48);
+  margin-bottom: 5px;
+}
+.DlicomFeaturesSection .columncards .columncardsbottom {
+  width: 100%;
+  border-radius: 15px;
+  height: 49%;
+  border: 1px solid #362c4af8;
+  text-align: center;
+}
+
+.DlicomFeaturesSection
+  .columncards
+  .columncard
+  .ImgBottomContainer
+  .columncardProfileImg {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.DlicomFeaturesSection .columncards .columncardsbottom h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+
+.DlicomFeaturesSection
+  .columncards
+  .columncardsbottom
+  .ImgBottomContainer
+  .topBottomProfileImg {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+}
+.DlicomFeaturesSection .columncards .columncardsbottom p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-top: 0.1rem;
+  color: rgba(255, 255, 255, 0.48);
+}
+.DlicomFeaturesSection .columncards .columncardsbottom.bottomThree {
+  text-align: center;
+}
+/* End Dlicom Features Section */
+
+/* Future Section */
+
+.futureSection {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.futureSection .container {
+  width: 66%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.futureSection .futureSectionText {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  background: url("../../public/glow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.futureSection .futureSectionText h3 {
+  color: #12ffff;
+  margin-top: 3.5rem;
+}
+.futureSection .futureSectionText .firstPara {
+  font-size: 44px;
+  font-weight: 600;
+  width: 70%;
+  margin-top: 0.5rem;
+}
+.futureSection .futureSectionText .secondPara {
+  font-size: 15px;
+  width: 69%;
+  margin: 0.5rem auto 2.5rem;
+  color: #ffffff;
+}
+.futureSection .container .contentContainer {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.futureSection .container .contentContainer .imgContainer {
+  border-radius: 15px;
+  width: 320px;
+}
+.futureSection .container .contentContainer .imgContainer .futureImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.futureSection .container .contentContainer .textContent {
+  flex-wrap: wrap;
+  width: 600px;
+  gap: 1.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.futureSection .container .contentContainer .textContent .titleAndPara {
+  width: 275px;
+  background: #15191c;
+  padding: 10px;
+  border-radius: 15px;
+}
+.futureSection .container .contentContainer .textContent .titleAndPara h2 {
+  font-size: 18px;
+}
+.futureSection .container .contentContainer .textContent .titleAndPara p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+/* End Future Section */
+
+/* solve Section */
+
+.solveSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background: url("../../public/glow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.solveSection .container {
+  width: 87%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.solveSection .container .solveSectionText {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.solveSection .container .solveSectionText h3 {
+  color: #12ffff;
+  margin-top: 0.7rem;
+}
+.solveSection .container .solveSectionText .firstPara {
+  font-size: 44px;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.solveSection .container .cardsContainer {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  margin: 4rem auto;
+}
+.solveSection .container .cardsContainer .solveCard {
+  width: 480px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  background: #222a308c;
+  border-radius: 10px;
+  padding: 30px;
+  gap: 1rem;
+}
+.solveSection .container .cardsContainer .solveCard .cardIcon {
+  font-size: 200px;
+  color: #72f2ee;
+}
+.solveSection .container .cardsContainer .solveCard h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.solveSection .container .cardsContainer .solveCard p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c8c8c8;
+  line-height: 29px;
+}
+
+/* End solve Section */
+
+/* roadMap Section */
+.roadMapSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  flex-wrap: wrap;
+  margin: 6rem auto;
+}
+.roadMapSection .roadMapCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-direction: column;
+  width: 400px;
+  color: white;
+  padding: 29px 20px;
+  border-radius: 15px;
+}
+.roadMapSection .roadMapCard .icon {
+  font-size: 24px;
+  color: #008e79;
+  rotate: -5deg;
+}
+
+.roadMapSection .roadMapCard .roadMaptitle {
+  line-height: 53px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.roadMapSection .roadMapCard .roadMapPaperpara {
+  font-size: 15px;
+  font-weight: 300;
+}
+.roadMapSection .roadMapCard .roadMapBtn {
+  background: #72f2ee;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 23px;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.roadMapSection .roadMapCard .roadMapBtn:hover {
+  background-color: #008e79;
+}
+.roadMapSection .marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 550px;
+  overflow: hidden;
+}
+.roadMapSection .marquee .roadMapAnimationCard {
+  padding: 0 50px;
+  width: 570px;
+  height: 180px;
+  background: rgb(0, 38, 39);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.roadMapSection .marquee .roadMapAnimationCard::after {
+  content: "";
+  display: none;
+  width: 55%;
+  height: 2px;
+  background-image: radial-gradient(
+    circle,
+    rgb(0, 255, 255),
+    rgb(0, 205, 205),
+    rgba(18, 255, 255, 0.092)
+  );
+  box-shadow: 1200px -1000px 2000px 100px rgb(18, 255, 255); /* light shadow on the top side */
+  position: absolute;
+  bottom: -0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.roadMapSection .marquee .roadMapAnimationCard:hover::after {
+  display: block;
+}
+.roadMapSection .marquee .roadMapAnimationCard:hover {
+  background: url("../../public/light.png") no-repeat, rgb(0, 38, 39);
+  background-position: 50% -80%;
+  background-size: 60%;
+}
+.roadMapSection .marquee .roadMapAnimationCard .date {
+  color: #72f2ee;
+  font-size: 26px;
+}
+.roadMapSection .marquee .roadMapAnimationCard .event {
+  font-size: 14.5px;
+  text-align: center;
+  width: 50%;
+}
+
+/* End roadMap Section */
+
+/* Growth Section */
+
+.growthSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background: url("../../public/glow.png");
+  background-repeat: no-repeat;
+  background-position: 70% 90%;
+  background-size: 90%;
+}
+.growthSection .container {
+  width: 1100px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 8rem auto;
+  flex-wrap: wrap;
+  border-radius: 13px;
+  border: 1px solid #72f2ee;
+  background: linear-gradient(180deg, #4a6e7055 10%, #00040a);
+  padding: 18px 5px;
+  gap: 1.1rem;
+}
+.growthSection .container .imgContainer {
+  width: 480px;
+}
+.growthSection .container .imgContainer .growthImg {
+  width: 100%;
+  height: 100%;
+}
+.growthSection .container .cardsContainer {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.growthSection .container .cardsContainer .growthCard {
+  width: 440px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+  background: #254746;
+  font-size: 13px;
+}
+.growthSection .container .cardsContainer .growthCard button {
+  padding: 6.5px 15px;
+  background: #72f2ee;
+  color: black;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  width: 107px;
+}
+
+/* End Growth Section */
+.dliAllocationSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dliAllocationSection .container {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem auto;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.dliAllocationSection .container .textContainer {
+  align-self: flex-start;
+}
+.dliAllocationSection .container .textContainer h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #72f2ee;
+}
+
+.dliAllocationSection .container .dliAllocationCard {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 13px;
+  border: 1px solid rgba(114, 114, 114, 0.762);
+  padding: 20px;
+  gap: 1.5rem;
+}
+.dliAllocationSection .container .dliAllocationCard .imgContainer {
+  width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(114, 114, 114, 0.762);
+}
+.dliAllocationSection
+  .container
+  .dliAllocationCard
+  .imgContainer
+  .dliAllocationImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.dliAllocationSection .container .dliAllocationCard .cardTextContainer {
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.dliAllocationSection .container .dliAllocationCard .numberAndTitle {
+  width: 240px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.dliAllocationSection .container .dliAllocationCard .numberAndTitle h1 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(90.02deg, #72f2ee, #016b5e);
+  background-clip: text;
+  color: transparent;
+}
+
+.dliAllocationSection .container .dliAllocationCard .numberAndTitle p {
+  color: #cbcbcb;
+  font-size: 14px;
+}
+
+/*  */
+/* stack and earn section */
+
+.stackAndEarnSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stackAndEarnSection .container {
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem auto;
+  flex-direction: column;
+  background: url("../../public/a1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 18px;
+  position: relative;
+}
+.stackAndEarnSection .container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.501);
+}
+.stackAndEarnSection .container h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+.stackAndEarnSection .container p {
+  width: 70%;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  color: #e6e6e6;
+  z-index: 1;
+}
+.stackAndEarnSection .container .stackAndEarnlink {
+  z-index: 1;
+  margin: 2rem 0;
+}
+.stackAndEarnSection .container .stackAndEarnBtn {
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 7px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.stackAndEarnSection .container .stackAndEarnBtn:hover {
+  background-color: #01b9b9;
+}
+/* End stack and earn section */
+
+/* solutions Section */
+
+.solutionsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.solutionsSection h3 {
+  color: #12ffff;
+  margin-top: 0.7rem;
+}
+.solutionsSection .solutionsTitle {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.solutionsSection .container {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.solutionsSection h3 {
+  color: #12ffff;
+  margin-top: 0.7rem;
+}
+.solutionsSection .container .leftCardsContainer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+.solutionsSection .container .rightCardsContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1;
+}
+.solutionsSection .container .bigCard {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #55515b;
+  border-radius: 15px;
+  padding: 25px;
+}
+.solutionsSection .container .bigCard p {
+  margin-bottom: 2.2rem;
+}
+
+.solutionsSection .container .bigCard .imgContainer {
+  width: 90%;
+  height: 250px;
+}
+.solutionsSection .container .imgContainer {
+  width: 280px;
+  height: 210px;
+}
+.solutionsSection .container .imgContainer .solutionsImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.solutionsSection .container .normalCard {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid #55515b;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.solutionsSection .container .normalCard .textContainer {
+  display: flex;
+
+  gap: 1rem;
+  width: 65%;
+  flex-direction: column;
+}
+.solutionsSection .container .normalCard .textContainer h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.solutionsSection .container .normalCard .textContainer p {
+  font-size: 14px;
+}
+
+/* End solutions Section */
+
+/* ourTeam section */
+.ourTeamSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5.5rem auto;
+}
+.ourTeamSection .ourTeamTitle {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.ourTeamSection .cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.ourTeamSection .cardsContainer .card {
+  width: 245px;
+  padding: 18px 16px;
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 12px;
+  background: linear-gradient(
+    132deg,
+    rgba(29, 41, 39, 0.52) 0%,
+    rgba(14, 23, 22, 0) 100%
+  );
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ourTeamSection .cardsContainer .card .imgContainer {
+  width: 112px;
+  height: 112px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid rgb(56, 56, 56);
+  margin-bottom: 2.2rem;
+}
+.ourTeamSection .cardsContainer .card .imgContainer .ourTeamImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.ourTeamSection .cardsContainer .card:hover {
+  background: linear-gradient(
+    132deg,
+    rgba(29, 41, 39, 0.99) 0%,
+    rgba(14, 23, 22, 0) 100%
+  );
+}
+.ourTeamSection .cardsContainer .ourTeamsocial {
+  margin-top: 0.4rem;
+}
+.ourTeamSection .linkedin:hover {
+  color: #0091ff;
+}
+/* End ourTeam section */
+
+/* Partners Section */
+
+.partnersSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.partnersSection .partnersTitle {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+}
+.partnersSection .container {
+  width: 75%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+.partnersSection .container .contentContainer {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.partnersSection .container .imgContainer {
+  width: 250px;
+  height: 100px;
+  margin-left: 4.5rem;
+}
+.partnersSection .container .imgContainer.partnerImg2 {
+  width: 230px;
+  height: 70px;
+}
+.partnersSection .container .imgContainer.dLIComllogo {
+  width: 276px;
+  height: 70px;
+}
+.partnersSection .container .imgContainer.partnerImg {
+  width: 70px;
+  height: 105px;
+}
+.partnersSection .container .imgContainer.logoshlenPower {
+  width: 286px;
+  height: 100px;
+}
+.partnersSection .container .imgContainer.DarkMode3 {
+  width: 126px;
+  height: 95px;
+}
+.partnersSection .container .imgContainer.zeeve {
+  width: 126px;
+  height: 95px;
+}
+.partnersSection .container .imgContainer .solutionsImg {
+  width: 100%;
+
+}
+
+/* End Partners Section */
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .videoSection .videoContainer {
+    width: 66%;
+  }
+  .whitePaperSection .whitePaperContainer {
+    width: 66%;
+  }
+  .DlicomFeaturesSection .container {
+    width: 85%;
+  }
+  .futureSection .container {
+    width: 90%;
+  }
+  .futureSection .container .contentContainer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .solveSection .container {
+    width: 99%;
+  }
+  .growthSection .container {
+    width: 96%;
+  }
+  .dliAllocationSection .container {
+    width: 95%;
+    gap: 1rem;
+  }
+  .dliAllocationSection .container .dliAllocationCard .numberAndTitle {
+    width: 270px;
+  }
+  .stackAndEarnSection .container {
+    width: 85%;
+  }
+  .solutionsSection .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .videoSection .videoContainer {
+    width: 80%;
+  }
+  .videoSection .videoContainer .iframe {
+    height: 440px;
+  }
+  .whitePaperSection .whitePaperContainer {
+    width: 92%;
+  }
+  .DlicomFeaturesSection .container {
+    width: 95%;
+  }
+  .futureSection .container {
+    width: 93%;
+  }
+  .futureSection .container .contentContainer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .futureSection .container .contentContainer .textContent {
+    gap: 2rem;
+  }
+  .solveSection .container {
+    width: 97%;
+  }
+  .dliAllocationSection .container {
+    width: 90%;
+  }
+  .dliAllocationSection .container .dliAllocationCard {
+    flex-direction: column;
+  }
+  .growthSection .container {
+    width: 88%;
+  }
+  .dliAllocationSection .container .textContainer {
+    align-self: center;
+    justify-self: center;
+  }
+  .dliAllocationSection .container .dliAllocationCard .numberAndTitle {
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .stackAndEarnSection .container {
+    width: 90%;
+  }
+  .stackAndEarnSection .container h1 {
+    font-size: 45px;
+  }
+  .stackAndEarnSection .container p {
+    width: 80%;
+  }
+  .solutionsSection .container {
+    width: 96%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .mainSection {
+    height: initial;
+    background: none;
+  }
+  .videoSection .videoContainer {
+    width: 80%;
+  }
+  .videoSection .videoContainer .iframe {
+    height: 350px;
+  }
+  .whitePaperSection .whitePaperContainer {
+    width: 97%;
+  }
+  .DlicomFeaturesSection .container {
+    width: 80%;
+  }
+  .futureSection .container {
+    width: 98.5%;
+  }
+  .futureSection .container .contentContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .futureSection .container .contentContainer .textContent {
+    gap: 1.1rem;
+  }
+  .solveSection .container .solveSectionText .firstPara {
+    font-size: 38px;
+  }
+  .solveSection .container {
+    width: 97%;
+  }
+  .growthSection .container {
+    width: 95%;
+  }
+  .dliAllocationSection .container {
+    width: 94%;
+  }
+  .dliAllocationSection .container .dliAllocationCard {
+    flex-direction: column;
+  }
+  .dliAllocationSection .container .dliAllocationCard .numberAndTitle {
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .stackAndEarnSection .container {
+    width: 95%;
+  }
+  .stackAndEarnSection .container h1 {
+    font-size: 40px;
+  }
+  .stackAndEarnSection .container p {
+    width: 85%;
+    font-size: 16px;
+  }
+  .solutionsSection .container {
+    width: 92%;
+  }
+  .solutionsSection .container .normalCard h1 {
+    font-size: 25px;
+  }
+  .ourTeamSection .ourTeamTitle {
+    font-size: 30px;
+  }
+  .partnersSection .partnersTitle {
+    width: 95%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainSection .textContainer {
+    margin: 7rem 0 4% 1%;
+    width: 100%;
+  }
+  .mainSection .textContainer .mainSectionTitle {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .mainSection .textContainer .mainSectionPara {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .mainSection {
+    height: initial;
+    background: none;
+  }
+  .videoSection .videoContainer {
+    width: 95%;
+  }
+  .videoSection .videoContainer .iframe {
+    height: 300px;
+  }
+  .videoSection .videoPara {
+    font-size: 12px;
+  }
+  .whitePaperSection .whitePaperContainer {
+    width: 98%;
+  }
+  .whitePaperSection .whitePaperContainer .whitePaperTitle {
+    font-size: 30px;
+  }
+  .whitePaperSection .whitePaperContainer .whitePaperpara {
+    font-size: 14px;
+  }
+  .DlicomFeaturesSection {
+    padding: 5px;
+  }
+  .DlicomFeaturesSection .container {
+    width: 99%;
+  }
+  .DlicomFeaturesSection .DlicomFeaturesCardsConatiner .easyAppCard {
+    background-position: center 170px, center;
+  }
+  .DlicomFeaturesSection
+    .DlicomFeaturesCardsConatiner
+    .easyAppCard
+    .easyAppCardTitle {
+    font-size: 18px;
+    padding: 2px;
+  }
+  .DlicomFeaturesSection .columncards .columncard h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  .DlicomFeaturesSection .columncards .columncard p {
+    margin-top: 0.2rem;
+  }
+
+  .futureSection .container {
+    width: 98%;
+  }
+  .futureSection .container .futureSectionText .firstPara {
+    font-size: 28px;
+  }
+  .futureSection .container .futureSectionText .secondPara {
+    width: 100%;
+  }
+  .futureSection .container {
+    width: 96%;
+  }
+  .futureSection .container .contentContainer {
+    gap: 2rem;
+  }
+  .futureSection .container .contentContainer .textContent {
+    gap: 1rem;
+  }
+  .futureSection .container .contentContainer .textContent .titleAndPara h2 {
+    font-size: 16px;
+  }
+  .futureSection .container .contentContainer .textContent .titleAndPara p {
+    font-size: 13px;
+  }
+  .futureSection .container .contentContainer .imgContainer {
+    width: 350px;
+  }
+  .solveSection .container .solveSectionText .firstPara {
+    font-size: 30px;
+  }
+  .solveSection .container {
+    width: 96%;
+  }
+  .solveSection .container .cardsContainer .solveCard {
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .solveSection .container .cardsContainer .solveCard .cardIcon {
+    font-size: 150px;
+  }
+  .solveSection .container .cardsContainer .solveCard h2 {
+    font-size: 17px;
+  }
+  .solveSection .container .cardsContainer .solveCard p {
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard {
+    padding: 0 20px;
+    width: 97%;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard .date {
+    font-size: 20px;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard .event {
+    font-size: 12px;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard:hover {
+    background-position: 50% -400%;
+    background-size: 40%;
+  }
+  .growthSection .container {
+    width: 96%;
+    margin: 6rem auto;
+    padding: 10px;
+  }
+  .growthSection .container .imgContainer {
+    width: 100%;
+  }
+  .growthSection .container .cardsContainer {
+    width: 100%;
+  }
+  .growthSection .container .cardsContainer .growthCard {
+    width: 100%;
+    font-size: 14px;
+  }
+  .dliAllocationSection .container {
+    width: 97%;
+  }
+  .dliAllocationSection .container .dliAllocationCard {
+    flex-direction: column;
+  }
+
+  .dliAllocationSection .container .dliAllocationCard .numberAndTitle {
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .dliAllocationSection .container .dliAllocationCard .numberAndTitle h1 {
+    font-size: 50px;
+  }
+  .stackAndEarnSection .container {
+    width: 95%;
+  }
+  .stackAndEarnSection .container h1 {
+    font-size: 35px;
+  }
+  .stackAndEarnSection .container p {
+    width: 90%;
+    font-size: 15px;
+  }
+  .solutionsSection .container {
+    width: 97%;
+  }
+  .solutionsSection .container .imgContainer {
+    width: 265px;
+    height: 240px;
+  }
+  .solutionsSection .container .leftCardsContainer {
+    width: 100%;
+  }
+  .solutionsSection .container .rightCardsContainer {
+    width: 100%;
+  }
+  .solutionsSection .container .normalCard {
+    padding: 7px;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .solutionsSection .container .normalCard .textContainer {
+    width: 98%;
+  }
+  .solutionsSection .container .normalCard .textContainer h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .solutionsSection .container .normalCard .textContainer p {
+    font-size: 12px;
+  }
+  .ourTeamSection .ourTeamTitle {
+    font-size: 26px;
+  }
+  .partnersSection .partnersTitle {
+    width: 98%;
+    font-size: 20px;
+  }
+  .partnersSection .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .solutionsSection .container .normalCard {
+    flex-wrap: wrap;
+    /* width: 98.5%; */
+  }
+  .solutionsSection .container .normalCard .textContainer {
+    width: 100%;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard {
+    padding: 0 10px;
+    width: 98%;
+  }
+  .roadMapSection .marquee .roadMapAnimationCard:hover {
+    background-position: 50% -500%;
+    background-size: 70%;
+  }
+  .partnersSection .container .leftCardsContainer .normalCard {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 310px) {
+  .solutionsSection .container .normalCard {
+    width: 98.5%;
+  }
+}

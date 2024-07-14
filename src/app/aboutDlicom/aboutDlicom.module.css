@@ -1,0 +1,104 @@
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+
+  border-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 1.7em;
+  color: #00f9f9;
+  margin: 1rem auto;
+}
+
+.content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.7em;
+  color: #12ffff;
+  border-bottom: 2px solid #00a491dc;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  font-size: 1.3em;
+  /* color: #00a491; */
+  color: #00b3c0;
+  margin-top: 10px;
+}
+
+.section p,
+.section ul,
+.section ol {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.section ul,
+.section ol {
+  padding-left: 20px;
+}
+
+.section ul li,
+.section ol li {
+  margin-bottom: 10px;
+}
+
+.section ol li::marker {
+  color: #00f9f9;
+}
+
+.section ul li::marker {
+  color: #00f9f9;
+}
+
+.section a {
+  color: #00f9f9;
+  text-decoration: underline;
+}
+
+.section a:hover {
+  color: #12ffff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .section h2 {
+    font-size: 1.4em;
+  }
+
+  .section h3 {
+    font-size: 1.1em;
+  }
+
+  .section p,
+  .section ul,
+  .section ol {
+    font-size: 0.9rem;
+  }
+}

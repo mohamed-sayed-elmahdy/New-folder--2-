@@ -1,0 +1,238 @@
+/* nav style */
+.navContainer {
+  width: 965px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  top: 0;
+  z-index: 3000;
+  background-color: #4a6e7055;
+  border-radius: 25px;
+  border: 1px solid #63ffff;
+  margin: 1rem auto 1rem;
+  padding: 10px 20px;
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logocontainer .logoLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer .logo {
+  margin-left: 15px;
+}
+
+.navContainer .links {
+  justify-content: center;
+  gap: 2.3rem;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 1.5rem;
+}
+
+.navContainer .menu {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer .menu .dropmenu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  display: none;
+  z-index: 1000;
+  gap: 1.3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 25px;
+  width: 250px;
+  padding: 25px;
+  transition: 0.3s;
+  border: 1px solid #63ffff;
+  background: black;
+}
+
+.navContainer .menu .dropmenu .linkmenu:hover {
+  color: #00e5d1;
+}
+
+.navContainer .menu:hover .dropmenu,
+.navContainer .menu:focus-within .dropmenu {
+  display: flex;
+}
+
+.navContainer .menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navContainer .menu span:hover {
+  color: #00e5d1;
+}
+
+.navContainer .menu .menuIcon {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navContainer .links .link {
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+
+.navContainer .links .link:hover {
+  color: #00d6c4;
+}
+
+.navMobileContainer {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  background-color: black;
+  z-index: 1000;
+  transition: 0.9s all;
+  border-radius: 25px;
+  border: 1px solid #63ffff;
+  margin: 1rem auto 1rem;
+  padding: 10px 20px;
+}
+.navMobileContainer .logoContainer {
+  margin-left: 1rem;
+}
+.navMobileContainer .links {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.navMobileContainer .links .menu {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 5px 0;
+  width: 100%;
+  transition: 0.3s;
+}
+.navMobileContainer .links .menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  transition: 0.3s;
+}
+.navMobileContainer .links .menu .dropmenu {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 18px;
+  z-index: 4000;
+  font-size: 14px;
+  padding: 20px;
+  background: #00655d;
+  cursor: default;
+  width: 96%;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+.navMobileContainer .links .menu .dropmenu .closeIcon {
+  color: #00e5d1;
+}
+.navMobileContainer .links .menu .dropmenu.showDropmenu {
+  display: flex;
+  max-height: 500px;
+}
+.navMobileContainer .sidebar {
+  position: absolute;
+  z-index: 4000;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 370px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 15px;
+  transition: 0.3s;
+  border: 1px solid #63ffff;
+}
+.navMobileContainer .sidebar.showSidebar {
+  display: flex;
+  top: 70px;
+  left: 50%;
+}
+.navMobileContainer .closeIcon {
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #00e5d1;
+}
+.navMobileContainer .menuIcon {
+  color: #00e5d1;
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 1.5rem;
+}
+.navMobileContainer .link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.link:hover {
+  color: #00e5d1;
+}
+
+@media screen and (min-width: 975px) {
+  .navMobileContainer {
+    display: none;
+  }
+}
+@media screen and (max-width: 974.9px) {
+  .navContainer {
+    display: none;
+  }
+  .navMobileContainer .menuIcon {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navMobileContainer .sidebar {
+    width: 98%;
+  }
+}

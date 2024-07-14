@@ -1,0 +1,21 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@devnomic/marquee": "^1.0.2",
+    "@gsap/react": "^2.1.1",
+    "@studio-freight/react-lenis": "^0.0.47",
+    "gsap": "^3.12.5",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.1.0"
+  }
+}
